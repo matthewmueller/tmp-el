@@ -17,7 +17,7 @@ module.exports = tmp;
 
 function tmp(el, fn) {
   fn = fn || function(){};
-  if (document.contains(el)) return fn(el);
+  if (document.contains(el)) return get(el, fn);
 
   var tmp = document.createElement('div');
   tmp.style = style;
@@ -25,9 +25,17 @@ function tmp(el, fn) {
   tmp.appendChild(el);
   body.appendChild(tmp);
 
-  var ret = ('string' == typeof fn) ? el[fn] : fn(el);
+  var ret = get(el, fn);
 
   body.removeChild(tmp);
 
   return ret;
+}
+
+/**
+ * Get
+ */
+
+function get(el, fn) {
+  return 'string' == typeof fn ? el[fn] : fn(el);
 }
