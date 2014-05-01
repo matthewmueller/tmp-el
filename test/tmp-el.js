@@ -28,4 +28,9 @@ describe('tmp-el', function() {
     assert(28 == height);
     assert(0 == el.offsetHeight);
   })
+
+  it('should allow you to pass in strings', function() {
+    var width = tmp('<h2>hi</h2>', 'offsetWidth');
+    assert(960 == width);
+  })
 })
