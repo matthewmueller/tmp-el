@@ -3,7 +3,9 @@
   "repo": "matthewmueller/tmp-el",
   "description": "temporarily add an element to the page to get css values",
   "version": "0.0.2",
-  "keywords": [],
+  "keywords": [
+    "browser"
+  ],
   "dependencies": {},
   "development": {
     "component/assert": "*",
