@@ -1,0 +1,23 @@
+{
+  "name": "tmp-el",
+  "version": "0.0.2",
+  "description": "temporarily add an element to the page to get css values",
+  "author": "Matthew Mueller",
+  "contributors": [
+    "Nathan Rajlich <nathan@tootallnate.net>"
+  ],
+  "keywords": [
+    "browser"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "component": {
+    "scripts": {
+      "tmp-el/index.js": "index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewmueller/tmp-el.git"
+  }
+}
