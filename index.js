@@ -16,14 +16,14 @@ module.exports = tmp;
  *
  * @param {Element|String} el
  * @param {Function|String} fn
- * @return {String} 
+ * @return {String}
  */
 
 function tmp(el, fn) {
   fn = fn || function() {};
 
   // if the el is already in the dom, just call fn
-  if (document.contains(el)) return get(el, fn);
+  if (body.contains(el)) return get(el, fn);
 
   // create the temporary element
   var tmp = document.createElement('div');
